@@ -1,16 +1,10 @@
-const assignmentButtons = document.querySelectorAll('.assignment-btn');
-const submissionButtons = document.querySelectorAll('.submission-btn');
+function changeBodyColor(){
+    let body = document.getElementById('body');
 
-assignmentButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    assignmentButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-  });
-});
-
-submissionButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    submissionButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-  });
-});
+    if (body.style.backgroundColor === 'bisque')
+    {
+        body.style.backgroundColor = 'red';
+    } 
+    
+    else { body.style.backgroundColor = 'bisque';}
+}
