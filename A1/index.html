@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+
+    <meta charset="utf-8">
+    
+    <!-- Insert relevant content inside the following meta tags-->
+    <meta name="author" content="Varun Padmanabhan">
+    <meta name="description" content="This is a Good Morning Message Maker">
+    <meta property="og:title" content="Good Morning Message Maker"/>
+    <meta property="og:description" content="This is a Good Morning Message Maker"/>
+    
+    <title>HIP HOP ADLIBS</title>
+    
+    <!-- No need to edit this-->
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website"/>
+
+    <!-- Links to boilerplate CSS and JS files -- DO NOT CHANGE or EDIT THESE!!! -->
+    <link href="./template-files/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./template-files/script.js" defer></script> 
+    <script type="text/javascript" src="./template-files/html2canvas.js" defer></script> 
+
+
+
+    <!-- Links to YOUR CSS and JS files -->
+    <link href="./style-to-edit.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./script-to-edit.js" defer></script>
+
+</head>
+    
+<body>
+
+    <header>        
+        
+        <!--DO NOT EDIT THIS -->
+        <button id="openPopup" onclick="showPopup()"> ? </button>
+        
+        <!--Insert your Names after the dash -->
+        <h1>'Album Art' – Varun_Padmanabhan</h1>
+    
+    </header>
+    <main>
+
+        <section id = "input">
+        <!-- Markup for your inputs and controls go inside this section -->
+        
+        <div class = "dropdown1">
+            <label id = "dropdownlabel" for = "dropdown"></label>
+            <select onchange = "selectImage()" id = "dropdown">
+                <option value = "images/21 savage.jpeg">Choose an Image</option>
+                <option value = "images/travis scott.jpeg">Travis Scott</option>
+                <option value = "images/Metro Boomin.jpeg">Metro Boomin</option>
+                <option value = "images/playboi.webp">Carti</option>
+
+            </select>
+        </div>
+
+ 
+        <div>
+
+            <p id = "titleTopHeader">Title on Top</p>
+            <input type = "text" id = "topHeader" oninput = "showTopHeaders()">
+
+            <p id = "titleBottomHeader">Title on Bottom</p>
+            <input type = "text" id = "bottomHeader" oninput = "showBottomHeaders()">
+            
+
+            <div id="fontFamilies">
+                <label>
+                    <input type="radio" name="fontFamily" value="cursive" onchange="changeFontFamily()"> Cursive
+                </label>
+                <label>
+                    <input type="radio" name="fontFamily" value="serif" onchange="changeFontFamily()"> Serif
+                </label>
+                <label>
+                    <input type="radio" name="fontFamily" value="sans-serif" onchange="changeFontFamily()"> Sans-serif
+                </label>
+            </div>
+
+            <div class = "dropdown2">
+                <select onchange = "selectFontColor()"  id = "dropdown21">
+                    <option>Choose Font Color</option>
+                    <option value = "red">Red</option>
+                    <option value = "blue">Blue</option>
+                    <option value = "black">Black</option>
+                    <option value = "bisque">Bisque</option>
+                    <option value = "green">Green</option>
+                    <option value = "beige">Beige</option>
+                    <option value = "brown">Brown</option>
+                    <option value = "yellow">Yellow</option>
+                    <option value = "pink">Pink</option>
+                </select>
+            </div>
+
+            <p id = "font-size1">Choose Font Size</p>
+            <input type = "range" name = "fontRange" id = "font-size" min="8" max="64" oninput="changeFontSize()"> 
+            
+
+            <div id = "font-strok3">
+                <p id = "stroke2">ChooseStroke</p>
+                <input type = "number" id = "stroke" min="1" max = "20" oninput="changeFontStroke()">
+            </div>
+
+            <div id="audio-container">
+                <div id="travis-adlibs" class="adlibs">
+                    <!-- Adlibs for Travis Scott -->
+
+                    <p id = "trav1"> GODDAMN! </p>
+                    <audio id="GODDAMN" controls>
+                        <source src="/Audio/Travis Scott/GODDAMN - AUDIO FROM JAYUZUMI.COM.mp3" type="audio/mp3">
+                    </audio>
+        
+                    <p id = "trav2"> LA FLAME </p>
+                    <audio id="LA_FLAME" controls>
+                        <source src="/Audio/Travis Scott/LA FLAME 1 - AUDIO FROM JAYUZUMI.COM.mp3" type="audio/mp3">
+                    </audio>
+        
+                    <p id = "trav3"> Its LITTTT </p>
+                    <audio id="LIT" controls>
+                        <source src="/Audio/Travis Scott/IT'S LIEET - AUDIO FROM JAYUZUMI.COM.mp3" type="audio/mp3">
+                    </audio>
+        
+                    <p id = "trav4"> STRAIGHT UP! </p>
+                    <audio id="Straight_Up" controls>
+                        <source src="/Audio/Travis Scott/STRAIGHT UP - AUDIO FROM JAYUZUMI.COM.mp3" type="audio/mp3">
+                    </audio>
+
+                </div>
+                <div id="metro-adlibs" class="adlibs">
+                    <!-- Adlibs for Metro -->
+
+                    <p id = "metro1"> METROO </p>
+                    <audio id="METROO" controls>
+                        <source src="./Audio/Metro Boomin/METRO.mp3" type="audio/mp3">
+                    </audio>
+        
+                    <p id = "metro2"> If young Metro don't <br> trust you </p>
+                    <audio id="If_young" controls>
+                        <source src="./Audio/Metro Boomin/If young metro don't trust you.mp3" type="audio/mp3">
+                    </audio>
+        
+                    <p id = "metro3"> Metro Boomin want <br> some more </p>
+                    <audio id="Metro_Boomin" controls>
+                        <source src="./Audio/Metro Boomin/Metro Boomin want some more nigga.mp3" type="audio/mp3">
+                    </audio>
+
+                </div>
+                <div id="carti-adlibs" class="adlibs">
+                    <!-- Adlibs for Playboi Carti -->
+                    
+                    <p id = "carti1"> WHAT! </p>
+                    <audio id="what" controls>
+                        <source src="/Audio/Playboi/Playboi Carti - WHAT Sound EffectAdlib.mp3" type="audio/mp3">
+                    </audio>
+        
+                    <p id = "carti2"> Hop in that bih </p>
+                    <audio id="hop-in-that-bih" controls>
+                        <source src="./Audio/Playboi/hop in that bih 2.mp3" type="audio/mp3">
+                    </audio>
+        
+                    <p id = "carti3"> Blah! </p>
+                    <audio id="Blah" controls>
+                        <source src="./Audio/Playboi/blah2.mp3" type="audio/mp3">
+                    </audio>
+        
+                    <p id = "carti4"> wha wha wha </p>
+                    <audio id="wha_wha_wha" controls>
+                        <source src="/Audio/Playboi/wha wha wha wha.mp3" type="audio/mp3">
+                    </audio>
+
+
+                </div>
+                
+            </div>
+
+    
+
+            
+
+        </div>
+
+        </section>
+
+        <!-- Button to Save Image | DO NOT EDIT THIS -->
+        <button id="save-img">Save Image</button>
+
+        <section id="output">
+            <div id="output-canvas">
+                <!-- Markup for your image and texts go inside this div -->
+                <!-- Use the ID "text-1" for Text 1 -->
+                <!-- Use the ID "text-2" for Text 2 -->  
+                <img src = "#" id = "imagebox">
+                <h1 id = "text-1" class = "text"></h1>
+                <h2 id = "text-2" class = "text"></h2>
+            </div>
+        </section>
+    
+    </main>
+    
+    <!--DO NOT EDIT THIS DIV -->
+    <div id="popupCover" onclick="hidePopup()"></div>
+
+    <!-- 
+        Once you are done with your assignment, replace the instructions text inside the div with id "popup" with the following text: This tool was programmed by [insert names], as part of a unit titled 'Coding for the Web', facilitated during the 2023/24 odd semester at Srishti Manipal Institute. 
+    -->
+    <div id="popup">
+
+         <p>
+            Coding for the Web '23/24 --- Assignment 1:
+        </p>    
+        <hr>       
+        <p>
+            Using the provided boilerplate, program a 'Good Morning Message Maker'. Include the following types of inputs / elements:
+        </p> 
+        <ol>
+            <li>
+                A dropdown menu to choose between 3 image options. Use the following three categories for the images: <u>Sunrise</u>, <u>Flowers</u>, and <u>Still-Life</u>. The dropdown menu should display the category names. 
+            </li> 
+            <br>   
+            <li>
+                Two text input boxes – one to enter text values for the primary title, and one for the secondary title. 
+            </li> 
+            <br>  
+            <li>
+                A list of radio buttons to toggle between 3 font families for the titles. You may either use the default font-families such as 'cursive', 'serif', and 'sans-serif', or specify your own font families (via font-face). 
+            </li> 
+            <br>  
+            <li>
+                A dropdown menu to choose the font colour. Specify upto 9 colour options. 
+            </li> 
+            <br>  
+            <li>
+                A range slider to adjust the font size (in pixels). 
+            </li> 
+            <br>  
+            <li>
+                A number input to specify text stroke (in pixels). 
+            </li> 
+        </ol>
+        <br>
+        <hr>
+        <ul>
+            <li>
+                Take your time to carefully go through the index.html file and understand the markup. The document has comments with instructions regarding what to add/edit. 
+            </li>
+            <br>  
+            <li>
+                The markup for the inputs and controls have to be included inside the &lt;section&gt; with the id "<u>input</u>"
+                <br>
+                <br>
+                The markup for the &lt;img&gt; and titles/texts have to be included inside the &lt;div&gt; with the id "<u>output-canvas</u>". The titles/texts need to use the ids "<u>text-1</u>"" and "<u>text-2</u>" respectively.
+                <br>
+                <br>
+                Inside the &lt;h1&gt; in &lt;header&gt;, include your names after the dash. 
+            </li>
+            <br>  
+            <li>
+                Make sure to use labels for all the inputs
+            </li>
+            <br>  
+            <li>
+                Once you are done with the functional bits of this assignment, use CSS to override the default styling of the input elements. 
+            </li>
+            <br>  
+            <li>
+                Once your are done with your assignment, replace all the instructions text inside this popup (&lt;div&gt; with the id, "popup") with the following text: 
+                <br>
+                This page was made by [insert names], as part of a unit titled 'Coding for the Web', facilitated during the 2023/24 odd semester at Srishti Manipal Institute.
+                <br>
+            </li>
+        </ul>
+        <br>
+        <hr>
+        <p>
+            DO NOT EDIT the style.css and script.js files! Use the style-to-edit.css and script-to-edit.js files to write your own CSS and JS. 
+        </p>
+        <hr>
+
+    </div>
+
+</body>    
