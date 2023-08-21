@@ -5,6 +5,10 @@ body {
     padding: 0;
     background-color: #c0c607;
   }
+
+a {
+    color: white;
+}
   
   .title {
     font-size: 48px;
