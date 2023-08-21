@@ -27,6 +27,7 @@ a{
     border: #cb5b5b;
     border-width: 10px;
     border-style: solid;
+    position: fixed;
 }
 
 /* Apply a flexible layout to the image grid */
@@ -34,7 +35,8 @@ a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0px; /* Adjust the gap as needed */
-    margin: 0px; /* Adjust the margin as needed */
+    margin-top: 0px; /* Adjust the margin as needed */
+    padding-top: 250px;
 }
 
 .image-box {
@@ -57,6 +59,14 @@ a{
 figcaption {
     font-size: 1.2vw;
 }
+
+.image-grid{
+    border: #cb5b5b;
+    border-width: 10px;
+    border-style: solid;
+}
+
+
 
 /* Responsive design for tablets */
 @media (max-width: 768px) {
