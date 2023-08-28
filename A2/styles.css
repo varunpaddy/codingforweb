@@ -1,6 +1,5 @@
 /* Reset some default styles */
-body,
-html {
+body, html {
     margin: 0;
     padding: 0;
 }
@@ -15,79 +14,70 @@ html {
     src: url(/fonts/BenguiatStd-Book.otf);
 }
 
-a {
-    font-size: 7vw;
-    white-space: nowrap;
+a{
+    font-size: 8vw;
+    margin: auto;
+    margin-left: 45px; 
 }
 
-#banner {
-    width: calc(100% - 20px);
-    height: 11vw;
+#banner{
+    width: 99%;
+    height: 15vw;
     background-color: #ddd287;
     border: #cb5b5b;
     border-width: 10px;
     border-style: solid;
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #e69494;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #f18686;
 }
 
 /* Apply a flexible layout to the image grid */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 0px;
-    padding-top: 12vw;
+    grid-gap: 0px; /* Adjust the gap as needed */
+    margin-top: 0px; /* Adjust the margin as needed */
+    padding-top: 250px;
 }
 
 .image-box {
-    width: 100%;
+    width: 100%; /* Set the width to 30% */
     padding: 0px;
     box-sizing: border-box;
     text-align: center;
 }
 
+/* Ensure the images maintain aspect ratio */
 .image-box img {
     max-width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .image-box-large {
-    grid-column: span 2;
+    grid-column: span 2; /* Make the image box span two columns */
 }
 
 figcaption {
     font-size: 1.2vw;
 }
 
-.image-grid {
+.image-grid{
     border: #cb5b5b;
     border-width: 10px;
     border-style: solid;
 }
 
+#dom {
+    font-size: small;
+    margin-left: 725px;
+    
+}
+
+
+
+/* Responsive design for tablets */
 @media (max-width: 768px) {
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
-        border-width: 7px;
     }
 
     .image-box-small:nth-child(7),
@@ -96,15 +86,62 @@ figcaption {
     }
 
     .image-box-small {
-        width: 200%;
+        width: 200%; /* Set the width to 50% to make two images fit in a row */
     }
 
-    #banner {
-        width: calc(100% - 15px);
-        border-width: 7px;
+    .image-box{
+        padding: -30px;
+    }
+
+    a{
+        font-size: 7vw;
+        margin: auto;
+        margin-left: 50px; 
     }
 
     figcaption {
         font-size: 1.8vw;
     }
+    
+    #banner{
+        width: 99%;
+        height: 15vw;
+        background-color: #ddd287;
+        border: #cb5b5b;
+        border-width: 10px;
+        border-style: solid;
+    }
+
 }
+
+/* Responsive design for phones */
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image-box-small:nth-child(7),
+    .image-box-small:nth-child(8) {
+        grid-column: span 1;
+    }
+
+    .image-box-small {
+        width: 200%; /* Set the width to 50% to make two images fit in a row */
+    }
+
+    .image-box{
+        padding: -50px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    figcaption {
+        font-size: 2.2vw;
+    }
+}
+
+    
+
+
