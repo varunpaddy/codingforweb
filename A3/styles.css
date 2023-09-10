@@ -1,0 +1,757 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1e1b1f;
+}
+
+@font-face {
+    font-family: 'techhead'; 
+    src: url('fonts/Techead\ Light.otf') format('opentype'); 
+
+  }
+
+  @font-face {
+    font-family: 'body'; 
+    src: url('fonts/Techead\ Thin.otf') format('opentype'); 
+
+  }
+  
+
+h1 {
+    font-family: 'techhead';
+    color: #F0EADB;
+    font-size: 64px;
+    margin: auto;
+    text-align: center;
+    margin-top: 6%;
+}
+
+#keyboard {
+    width: 80%;
+    height: 50%;
+    background-color: #342E37; 
+    border-style: solid;
+    border-color: #F0EADB;
+    border-radius: 0.5%;
+    overflow: hidden;
+    padding: 0.1%;
+    position: relative;
+    top: -150px;
+    
+}
+
+#row1 {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#esc  {
+    width: 9%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'techhead';
+    font-size: 14px;
+    display: flex; /* Use flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center;
+}
+
+#f1  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#f2  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#f3  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#f4  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#f5 {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#f6  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#f7 {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#f8  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#f9  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#f10  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#f11  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#f12  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+ 
+#power {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#row2 {
+    padding: 5px;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#tilda {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#one {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#two {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#three  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#four  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#five {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#six {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#seven {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#eight  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#nine  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#zero  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#hyphen  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#equal  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+ 
+#delete {
+    width: 9%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'techhead';
+    font-size: 14px;
+    display: flex; /* Use flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center;
+}
+
+#row3 {
+    padding: 5px;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#tab {
+    width: 9%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#q {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#w {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#e  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#r  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#t {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#y {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#u {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#i  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#o  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+    
+    
+}
+
+#p  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#open  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#close  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+ 
+#line {
+    width: 9%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+
+#row4 {
+    padding: 5px;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#caps {
+    width: 11%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#a {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#s {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#d  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#r  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#f {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#g {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#h {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#j  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#k  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#l  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#semi  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#quote  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+ 
+#return {
+    width: 11.2%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+    font-family: 'techhead';
+    font-size: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#row5 {
+    padding: 5px;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#shift {
+    width: 15%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'techhead';
+    font-size: 14px;
+    display: flex; /* Use flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center;
+}
+
+#z {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#x {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#c  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'techhead';
+    font-size: 18px;
+    display: flex; /* Use flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center;
+}
+
+#v  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'techhead';
+    font-size: 18px;
+    display: flex; /* Use flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center;
+}
+
+#b {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'techhead';
+    font-size: 18px;
+    display: flex; /* Use flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center;
+}
+
+#n {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'techhead';
+    font-size: 18px;
+    display: flex; /* Use flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center;
+}
+
+#m {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#comma  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#period  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#question  {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#shift2  {
+    width: 15%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#row6 {
+    padding: 5px;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#fn {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#control {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#option {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#cmd  {
+    width: 8%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#space {
+    width: 35%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 5%;
+    text-align: center;
+    font-family: 'techhead';
+    font-size: 22px;
+    display: flex; /* Use flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center;
+}
+
+#cmd2 {
+    width: 8%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#option2 {
+    width: 6.6%;
+    height: 60px;
+    background-color: #F0EADB;
+    border-radius: 10%;
+}
+
+#arrows {
+    width: 20%;
+    height: 60px;
+    justify-content: center;
+}
+
+#six_one {
+    height: 30px;
+}
+
+#up {
+    height: 25px;
+    background-color: #F0EADB;
+    width: 30%;
+    margin-left: 33%;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'techhead';
+    font-size: 18px;
+    display: flex; /* Use flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center;
+ 
+}
+
+#six_two {
+    height: 30px;
+    margin-top: 5px;
+}
+
+#left {
+    height: 25px;
+    background-color: #F0EADB;
+    width: 30%;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'techhead';
+    font-size: 18px;
+    display: flex; /* Use flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center;
+}
+
+#down {
+    height: 25px;
+    background-color: #F0EADB;
+    width: 30%;
+    margin-left: 33%;
+    margin-top: -25px;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'techhead';
+    font-size: 18px;
+    display: flex; /* Use flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center;
+ 
+}
+
+#right {
+    height: 25px;
+    background-color: #F0EADB;
+    width: 30%;
+    margin-left: 66%;
+    margin-top: -25px;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'techhead';
+    font-size: 18px;
+    display: flex; /* Use flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center;
+ 
+}
+
+

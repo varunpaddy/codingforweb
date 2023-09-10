@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'techhead'; 
+    src: url('../fonts/Techead\ Light.otf') format('opentype'); 
+
+  }
+
+  @font-face {
+    font-family: 'body'; 
+    src: url('../fonts/Techead\ Thin.otf') format('opentype'); 
+
+  }
+
+
+  h1 {
+    font-family: 'techhead';
+    color: #F0EADB;
+    font-size: 56px;
+    margin-top: 6%;
+    position: fixed;
+    text-align:  left;
+    margin-left: 5%;
+    opacity: 1; 
+    transition: opacity 0.5s;
+}
+
+h1.fade-on-scroll {
+    opacity: 50%;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+}
+
+html{
+    scroll-snap-type: y proximity;
+
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #000;
+    scroll-snap-align: center;
+}
+
+.section img {
+    max-width: 900px;
+    max-height: 1000px;
+    width: auto;
+    height: auto;
+
+}
+
+.section:nth-child(odd) {
+    background-color: #f0f0f000;
+}
+
+.section:nth-child(even) {
+    background-color: #e0e0f000;
+}
+
+.section:nth-child(2){
+    background-image: url('/VIsuals/images/noir\ poster\ the\ boys.png');
+    background-size: cover; /* This scales the image to cover the entire section */
+    background-position: center;
+
+}
+
+.section:nth-child(3){
+    background-image: url('/VIsuals/images/random\ wallpaper.png');
+    background-size: cover; /* This scales the image to cover the entire section */
+    background-position: center;
+
+}
+
+.section:nth-child(5){
+    background-image: url('/VIsuals/images/acclivity.png');
+    background-size: cover; /* This scales the image to cover the entire section */
+    background-position: center;
+   
+}
+
+.section:nth-child(4){
+    background-image: url('/VIsuals/images/Screenshot\ 2023-09-08\ at\ 1.05.34\ AM.png');
+    background-size: cover; /* This scales the image to cover the entire section */
+    background-position: left;
+   
+}
+
+.section:nth-child(1){
+    background-image: url('/VIsuals/images/Screenshot\ 2023-09-08\ at\ 1.10.00\ AM.png');
+    background-size: cover; /* This scales the image to cover the entire section */
+    background-position: left;
+   
+}
+
+
